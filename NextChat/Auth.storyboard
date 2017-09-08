@@ -6,6 +6,44 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="DJu-R4-hhe">
+            <objects>
+                <viewController id="Hr2-uE-MWG" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tby-J5-jUi"/>
+                        <viewControllerLayoutGuide type="bottom" id="gau-Le-vMK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LhU-T1-QfJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uSl-hu-u80" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-390" y="172"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="8J7-9g-RKH">
+            <objects>
+                <viewController id="tTZ-Rs-iGV" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jL4-wW-OoX"/>
+                        <viewControllerLayoutGuide type="bottom" id="2QQ-xR-szJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8Kp-Ev-ZP5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2yi-Kg-OqJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="439" y="172"/>
+        </scene>
+    </scenes>
 </document>
