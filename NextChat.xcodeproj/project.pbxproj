@@ -12,6 +12,8 @@
 		5FF5F6571F627952008CCAE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FF5F6551F627952008CCAE2 /* Main.storyboard */; };
 		5FF5F6591F627953008CCAE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FF5F6581F627953008CCAE2 /* Assets.xcassets */; };
 		5FF5F65C1F627953008CCAE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FF5F65A1F627953008CCAE2 /* LaunchScreen.storyboard */; };
+		5FF5F6641F627B66008CCAE2 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FF5F6631F627B66008CCAE2 /* Auth.storyboard */; };
+		8D2B0008FF194F3088A6A218 /* Pods_NextChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB35561C3FEEEBD2A9CD3401 /* Pods_NextChat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		5FF5F6581F627953008CCAE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5FF5F65B1F627953008CCAE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5FF5F65D1F627953008CCAE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FF5F6631F627B66008CCAE2 /* Auth.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		99EC3AE06DCAC2392DF3059B /* Pods-NextChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NextChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NextChat/Pods-NextChat.debug.xcconfig"; sourceTree = "<group>"; };
+		CC042F06866C5040E176D697 /* Pods-NextChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NextChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-NextChat/Pods-NextChat.release.xcconfig"; sourceTree = "<group>"; };
+		EB35561C3FEEEBD2A9CD3401 /* Pods_NextChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NextChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D2B0008FF194F3088A6A218 /* Pods_NextChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				5FF5F6501F627952008CCAE2 /* NextChat */,
 				5FF5F64F1F627952008CCAE2 /* Products */,
+				D2A6C66D485FB448BFD1FBF4 /* Pods */,
+				64DB5C6EA98DECCA9F9A2612 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,11 +66,29 @@
 				5FF5F6511F627952008CCAE2 /* AppDelegate.swift */,
 				5FF5F6531F627952008CCAE2 /* ViewController.swift */,
 				5FF5F6551F627952008CCAE2 /* Main.storyboard */,
+				5FF5F6631F627B66008CCAE2 /* Auth.storyboard */,
 				5FF5F6581F627953008CCAE2 /* Assets.xcassets */,
 				5FF5F65A1F627953008CCAE2 /* LaunchScreen.storyboard */,
 				5FF5F65D1F627953008CCAE2 /* Info.plist */,
 			);
 			path = NextChat;
+			sourceTree = "<group>";
+		};
+		64DB5C6EA98DECCA9F9A2612 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB35561C3FEEEBD2A9CD3401 /* Pods_NextChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D2A6C66D485FB448BFD1FBF4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				99EC3AE06DCAC2392DF3059B /* Pods-NextChat.debug.xcconfig */,
+				CC042F06866C5040E176D697 /* Pods-NextChat.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5FF5F6601F627953008CCAE2 /* Build configuration list for PBXNativeTarget "NextChat" */;
 			buildPhases = (
+				065E866730E64061FCACFA4E /* [CP] Check Pods Manifest.lock */,
 				5FF5F64A1F627952008CCAE2 /* Sources */,
 				5FF5F64B1F627952008CCAE2 /* Frameworks */,
 				5FF5F64C1F627952008CCAE2 /* Resources */,
+				E953ACF90DFEEA8D07E88581 /* [CP] Embed Pods Frameworks */,
+				E27A7CB141D4C34547B69AE3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,6 +154,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FF5F6641F627B66008CCAE2 /* Auth.storyboard in Resources */,
 				5FF5F65C1F627953008CCAE2 /* LaunchScreen.storyboard in Resources */,
 				5FF5F6591F627953008CCAE2 /* Assets.xcassets in Resources */,
 				5FF5F6571F627952008CCAE2 /* Main.storyboard in Resources */,
@@ -131,6 +162,66 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		065E866730E64061FCACFA4E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NextChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E27A7CB141D4C34547B69AE3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NextChat/Pods-NextChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E953ACF90DFEEA8D07E88581 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NextChat/Pods-NextChat-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NextChat/Pods-NextChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5FF5F64A1F627952008CCAE2 /* Sources */ = {
@@ -261,6 +352,7 @@
 		};
 		5FF5F6611F627953008CCAE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99EC3AE06DCAC2392DF3059B /* Pods-NextChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = R5MWXFW4RY;
@@ -274,6 +366,7 @@
 		};
 		5FF5F6621F627953008CCAE2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC042F06866C5040E176D697 /* Pods-NextChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = R5MWXFW4RY;
@@ -304,6 +397,7 @@
 				5FF5F6621F627953008CCAE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
